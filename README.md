@@ -2,7 +2,7 @@
 
 A collection of introductory tutotirals for working with data in R and Tidyverse.
 
-- [R basics](./r-basics/README.md)
+- [R basics](./r-basics/)
 - Joining data
 - Introduction to ggplot
 - Introduction to R Markdown
