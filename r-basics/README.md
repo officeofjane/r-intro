@@ -141,7 +141,7 @@ install.packages("tidyverse)
 
 ## Let's load some data
 
-Create a `r-basics` folder on your computer, either by creating a new R project, or manually creating a folder and setting the working directory. Then create and save a new script file. Don't forget to load the `tidyverse` package (you should already have it installed). You would also need to download the [data files from here](https://github.com/Financial-Times/visual-data-playbook/tree/master/files/r-basics) into the same folder.
+Create a `r-basics` folder on your computer, either by creating a new R project, or manually creating a folder and setting the working directory. Then create and save a new script file. Don't forget to load the `tidyverse` package (you should already have it installed). You would also need to download the [data files from here](https://github.com/officeofjane/r-intro/tree/master/r-basics) into the same folder.
 
 The function we use to load data into RStudio is `read_csv()`.
 
