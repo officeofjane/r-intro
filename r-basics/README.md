@@ -136,7 +136,7 @@ We are going to be using the `tidyverse` package to work with data in this guide
 
 ```
 # Run this in the console – only need to do this once on your computer
-install.packages("tidyverse)
+install.packages("tidyverse")
 ```
 
 ## Let's load some data
