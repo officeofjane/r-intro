@@ -27,7 +27,7 @@ It is recommended to install RStudio when working with the R programming languag
 
 The RStudio interface is made up of four window panes:
 
-![Screenshot of the RStudio interface](https://www.ft.com/__origami/service/image/v2/images/raw/http%3A%2F%2Fft-ig-images-prod.s3-website-eu-west-1.amazonaws.com%2Fv1%2F8413684827-6n3wt.png?source=ig)
+![Screenshot of the RStudio interface](./img/rstudio-interface.png)
 
 1. **Editor** (upper left)
   - R code editor where you write or open scripts
@@ -218,7 +218,7 @@ black_german_shepherds <- filter(nyc_dogs, breed == "German Shepherd Crossbreed"
 
 The two arguments to the `filter()` function are combined with `&`. The OR operator `|` works similarly. You can combine different operators to target subsets of the data.
 
-![Diagram of sets of boolean operations](https://www.ft.com/__origami/service/image/v2/images/raw/http%3A%2F%2Fft-ig-images-prod.s3-website-eu-west-1.amazonaws.com%2Fv1%2F8413674573-a4pw9.png?source=ig)
+![Diagram of sets of boolean operations](./img/boolean-operations.jpeg)
 
 (From [R for Data Science](https://r4ds.had.co.nz/transform.html#logical-operators), by Garrett Grolemund and Hadley Wickham)
 
