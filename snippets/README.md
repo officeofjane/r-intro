@@ -106,11 +106,13 @@ ggplot(data) +
 # change order of factor levels based on sorted data
 data %>%
   arrange(value) %>%
-  mutate(category = factor(category, levels = category))
+  mutate(category = factor(category, levels = category)) %>%
+  ggplot()
 
 # if we want a specific order, set levels manually
 data %>%
-  mutate(category = factor(category, levels = c("category_A", "category_B", "category_C", "category_D")))
+  mutate(category = factor(category, levels = c("category_A", "category_B", "category_C", "category_D"))) %>%
+  ggplot()
 ```
 
 ### stat_summary
@@ -153,6 +155,11 @@ ggplot(data) +
 ```
 
 ### Rotating x-axis tick labels
+```
+ggplot(data) +
+  geom_bar(aes(x = x_variable, y = y_variable), stat = "identity") +
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust = 1))
+```
 
 ### geom_histogram
 When evaluating colour according to an expression, the histogram will stack the distribution by default. You can change this to show the distribution is overlapping (with alpha), or display them side by side, by changing the position setting.
