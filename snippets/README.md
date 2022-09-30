@@ -2,6 +2,25 @@
 
 Some 'recipes' and patterns used in wrangling and exploring data in R.
 
+### Combining data files from a folder
+`read_csv` can be replaced by any custom function that includes extra cleaning steps.
+```
+filenames <- list.files("./path-to-folder", pattern = ".csv", full.names = TRUE)
+
+data <- filenames %>%
+  set_names() %>%
+  map_dfr(read_csv, .id = "file_path") %>%
+  select(-file_path)
+
+# example custom function
+extract_data <- function(path) {
+  clean_data <- read_csv(path)
+  # data wrangling steps here
+
+  return(clean_data)
+}
+```
+
 ### Selecting or filtering by matching a list
 `list` is a data frame containing a column of values you'd like to match.
 ```
