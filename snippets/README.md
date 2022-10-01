@@ -57,6 +57,33 @@ data %>%
   mutate(variable = lookup[variable])
 ```
 
+### Batch convert columns from character to numeric
+```
+data %>%
+  mutate(across(where(is.character), as.numeric))
+```
+
+### Sum across multiple columns
+`rowwise` method can also use tidy selection helpers, e.g. `starts_with`, `ends_with`, `contains` etc.
+```
+# method 1
+data %>%
+  mutate(sumrow = rowSums(across(x1:x5), na.rm = TRUE))
+
+# method 2
+data %>%
+  rowwise() %>%
+  mutate(sumrange = sum(c_across(x1:x5), na.rm = TRUE))
+```
+
+### Getting top/bottom values by group
+```
+data %>%
+  group_by(category) %>%
+  # slice_min for lowest values
+  slice_max(value, n = 10)
+```
+
 ### Filling in missing data
 Useful for when there are missing dates in the dataset. `complete` fills in gaps in the date, `full_seq` specifies what to fill it with.
 ```
