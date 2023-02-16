@@ -346,5 +346,4 @@ And, as always, google for answers whenever you're stuck.
 - [R for Data Science](https://r4ds.had.co.nz/)
 - [R for Journalists](https://learn.r-journalism.com/en/)
 - [Storytelling with R at Propublica](https://resources.rstudio.com/rstudio-conf-2018/storytelling-with-r-olga-pierce), Olga Pierce
-- [Where do things live in R? R for Excel users](http://rex-analytics.com/things-live-r-r-excel-users/)
-- [RStudio Data Transformation Cheatsheet](https://github.com/rstudio/cheatsheets/raw/master/data-transformation.pdf)
+- [RStudio Data Transformation Cheatsheet](https://github.com/rstudio/cheatsheets/blob/main/data-transformation.pdf)
