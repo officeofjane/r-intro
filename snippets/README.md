@@ -21,6 +21,14 @@ extract_data <- function(path) {
 }
 ```
 
+### Removing elements from a vector
+```
+vector <- c(1, 2, 3, 4, 5)
+remove <- c(3, 4)
+
+vector <- vector[!vector %in% remove]
+```
+
 ### Selecting or filtering by matching a list
 `list` is a data frame containing a column of values you'd like to match.
 ```
